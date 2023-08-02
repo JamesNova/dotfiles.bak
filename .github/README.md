@@ -27,5 +27,5 @@
 + Rofi - apps and menu launcher
 
 ## Dependencies
-To build the dependencies in Arch Linux just run '''installdeps.sh''' in '''.build/'''
+To build the dependencies in Arch Linux just run ```installdeps.sh``` in ```.build/```
 If you are on another distribution search the packages in pkgs.txt for your distro.
