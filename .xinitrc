@@ -50,6 +50,10 @@ start_polybar() {
     nm-applet &
 }
 
+run_colemak() {
+    setxkbmap us -variant colemak_dh
+}
+
 case $SESSION in
     awesome)
         screen_resolution

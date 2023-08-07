@@ -152,7 +152,6 @@ alias ...='cd ../..'
 alias ....='cd ../../..'
 alias .....='cd ../../../..'
 alias ......='cd ../../../../..'
-alias find='sudo find / -iname'
 alias man='sudo man'
 alias chown='sudo chown'
 alias chmod='sudo chmod'
@@ -160,6 +159,7 @@ alias chmod='sudo chmod'
 # pacman and paru
 alias pac="sudo pacman --color=auto -S"
 alias pacr="sudo pacman --color=auto -R"
+alias pacq="sudo pacman --color=auto -Q"
 alias pacsyu='sudo pacman --color=auto -Syyu'    # update only standard pkgs
 alias parusua='paru -Sua --noconfirm'            # update only AUR pkgs (paru)
 alias parusyu='paru -Syu --noconfirm'            # update standard pkgs and AUR pkgs (paru)
