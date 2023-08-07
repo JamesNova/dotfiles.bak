@@ -16,5 +16,3 @@ elif [[ "$theme" = Nord ]]; then
 elif [[ "$theme" = TokyoNight ]]; then
   sed -i '/beautiful.init/c\beautiful.init("~/.config/awesome/themes/tokyo-night/theme.lua")' $config
 fi
-
-echo 'awesome.restart()' | awesome-client

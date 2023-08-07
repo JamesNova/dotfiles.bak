@@ -27,5 +27,9 @@
 + Rofi - apps and menu launcher
 
 ## Dependencies
-To build the dependencies in Arch Linux just run ```installdeps.sh``` in ```.build/```
-If you are on another distribution search the packages in pkgs.txt for your distro.
+The dependencies are listed in ```.build/novapkgs.txt```.
+The dependencies in Arch Linux will be installed automatically during the building process.
+If you are on another distribution you will need to install them manually.
+
+## Installation
+To build the files just run ```.build/build.sh``` and you will be prompted with some things.

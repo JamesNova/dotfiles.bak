@@ -140,11 +140,12 @@ alias nconf="vim $HOME/.config/nvim/."
 alias zshrc="vim $HOME/.zshrc"
 
 # Changing "ls" to "exa"
-alias ls='exa -al --color=always --group-directories-first' # my preferred listing
-alias la='exa -a --color=always --group-directories-first'  # all files and dirs
-alias ll='exa -l --color=always --group-directories-first'  # long format
-alias lt='exa -aT --color=always --group-directories-first' # tree listing
-alias l.='exa -a | egrep "^\."'
+alias ls='exa -1a --icons --color=always --group-directories-first' # my preferred listing
+alias lg='exa -la --icons --color=always --group-directories-first --no-permissions --no-filesize --no-time' # my preferred listing
+alias la='exa -la --icons --color=always --group-directories-first'  # all files and dirs
+alias ll='exa -l --icons --color=always --group-directories-first'  # long format
+alias lt='exa -aT --icons --color=always --group-directories-first' # tree listing
+alias l.='exa -a | grep -E "^\."'
 
 # Faster Navigation
 alias ..='cd ..'
@@ -202,6 +203,9 @@ alias tofish="sudo chsh $USER -s /bin/fish && echo 'Now log out.'"
 # music
 alias ytaudio="yt-dlp --extract-audio --audio-format mp3 -P ~/Music"
 alias vis="ncmpcpp -s visualizer"
+
+# fing
+alias fpc="fpc -Co -Cr -Miso -gl"
 
 ### Run Pfetch on Start ###
 pfetch
