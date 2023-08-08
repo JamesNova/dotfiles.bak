@@ -6,6 +6,7 @@ read -p "Are you using Arch Linux? (or a distro that uses pacman?) [y/N]" distro
 case $distro in
     y|Y|yes|Yes|YES)
         folder=$(find $HOME -iname novapkgs.txt -printf '%h')
+        sudo chown $USER $folder
         cd $folder
         ./installdeps.sh
     ;;
@@ -49,7 +50,7 @@ fi
 mv novadots/.xinitrc .xinitrc
 mv novadots/.bashrc .bashrc
 mv novadots/.config .config
-mv novadots/.local/bin/* .local/bin/*
+mv novadots/.local/bin/* .local/bin/
 mv novadots/.session .session
 touch $HOME/.theme
 echo "#!/bin/sh" > .theme
@@ -65,13 +66,12 @@ case $backup in
     ;;
 esac
 
-exportlocal
-
-alathemer
-awmthemer
-nvimthemer
-rofithemer
-polythemer
+$HOME/.local/bin/exportlocal
+$HOME/.local/bin/alathemer
+$HOME/.local/bin/awmthemer
+$HOME/.local/bin/nvimthemer
+$HOME/.local/bin/rofithemer
+$HOME/.local/bin/polythemer
 
 echo "Cleaning things out..."
 rm -rf $folder

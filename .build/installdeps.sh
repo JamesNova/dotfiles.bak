@@ -16,5 +16,5 @@ elif
 fi
 
 
-sudo paru -Syyu
-sudo paru --needed --noconfirm - < $pkgs
+paru -Syyu
+paru -S --needed --noconfirm - < $pkgs
