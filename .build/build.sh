@@ -49,6 +49,7 @@ fi
 
 mv novadots/.xinitrc .xinitrc
 mv novadots/.bashrc .bashrc
+mv novadots/.mpd .mpd
 mv novadots/.config .config
 mv novadots/.local/bin/* .local/bin/
 mv novadots/.session .session
@@ -76,6 +77,14 @@ $HOME/.local/bin/polythemer
 echo "Cleaning things out..."
 rm -rf $folder
 rm -rf $HOME/novadots
+
+source $HOME/.theme
+alathemer
+awmthemer
+nvimthemer
+polythemer
+rofithemer
+walltheme
 
 echo "Now you need to do the final step manually"
 echo "Download and extract the next zip file as /usr/share/backgrounds"

@@ -7,14 +7,17 @@ command_exists() {
 }
 
 if command_exists paru; then
-
-elif
+    echo "Skipping Paru"
+else
+    echo "Installing Paru"
+    sudo chown $USER /etc
     cd /etc
     git clone https://aur.archlinux.org/paru.git
     cd paru
     makepkg -si
 fi
 
-
-paru -Syyu
+echo "Installing Packages"
+sudo pacman -Syyu --noconfirm
 paru -S --needed --noconfirm - < $pkgs
+sudo systemctl enable ly
