@@ -67,6 +67,7 @@ case $backup in
     ;;
 esac
 
+source $HOME/.theme
 $HOME/.local/bin/exportlocal
 $HOME/.local/bin/alathemer
 $HOME/.local/bin/awmthemer
@@ -77,14 +78,6 @@ $HOME/.local/bin/polythemer
 echo "Cleaning things out..."
 rm -rf $folder
 rm -rf $HOME/novadots
-
-source $HOME/.theme
-alathemer
-awmthemer
-nvimthemer
-polythemer
-rofithemer
-walltheme
 
 echo "Now you need to do the final step manually"
 echo "Download and extract the next zip file as /usr/share/backgrounds"

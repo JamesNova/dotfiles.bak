@@ -6,9 +6,7 @@ ttf-hack
 ttf-hack-nerd
 ttf-jetbrains-mono-nerd
 ttf-joypixels
-ttf-meslo
 ttf-mononoki-nerd
-ttf-ms-fonts
 ttf-nerd-fonts-symbols
 ttf-roboto
 ttf-roboto-mono-nerd
@@ -20,7 +18,6 @@ feh
 firefox
 htop
 neofetch
-pfetch
 starship
 unclutter
 unrar

@@ -1,6 +1,7 @@
 #!/bin/sh
 
 pkgs=$(sudo find $HOME -iname novapkgs.txt)
+aurpkgs=$(sudo find $HOME -iname aurpkgs.txt)
 
 command_exists() {
   command -v "$@" >/dev/null 2>&1
@@ -19,5 +20,9 @@ fi
 
 echo "Installing Packages"
 sudo pacman -Syyu --noconfirm
-paru -S --needed --noconfirm - < $pkgs
+sudo pacman -S --needed --noconfirm - < $pkgs
+paru -S --needed - < $aurpkgs
 sudo systemctl enable ly
+python -m ensurepip --upgrade
+python -m pip install --upgrade pip
+pip install --break-system-packages yt-dlp

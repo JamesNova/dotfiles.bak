@@ -1,0 +1,3 @@
+ttf-meslo
+ttf-ms-fonts
+pfetch
