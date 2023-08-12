@@ -5,7 +5,7 @@ read -p "Are you using Arch Linux? (or a distro that uses pacman?) [y/N]" distro
 
 case $distro in
     y|Y|yes|Yes|YES)
-        folder=$(find / -iname novapkgs.txt -printf '%h')
+        folder=$(sudo find / -iname novapkgs.txt -printf '%h')
         sudo chown $USER $folder
         cd $folder
         ./installdeps.sh
@@ -76,7 +76,6 @@ source $HOME/.theme
 $HOME/.local/bin/exportlocal
 $HOME/.local/bin/alathemer
 $HOME/.local/bin/awmthemer
-$HOME/.local/bin/nvimthemer
 $HOME/.local/bin/rofithemer
 $HOME/.local/bin/polythemer
 
