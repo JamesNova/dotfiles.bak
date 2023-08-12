@@ -28,6 +28,10 @@ start_pulseaudio() {
     pulseaudio --check || pulseaudio --start
 }
 
+start_dunst() {
+    dunst &
+}
+
 start_compositor() {
     picom -b
 }
@@ -60,6 +64,7 @@ case $SESSION in
         start_compositor
         start_pulseaudio
         run_unclutter
+        start_dunst
         start_wallpaper
     ;;
     dwm)

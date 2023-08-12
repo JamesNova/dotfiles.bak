@@ -1,9 +1,9 @@
 sw_volume: 100
 audio_device_state:1:pulse audio
 audio_device_state:1:Visualizer feed
-state: pause
-current: 24
-time: 22.268000
+state: play
+current: 21
+time: 69.015000
 random: 1
 repeat: 1
 single: 0
@@ -12,31 +12,30 @@ crossfade: 0
 mixrampdb: 0.000000
 mixrampdelay: -1.000000
 playlist_begin
-0:505 - artic monkeys.mp3
-1:Arctic Monkeys - I Wanna Be Yours.mp3
-2:Artic Monkey - 505.mp3
-3:Beach House - Space Song.mp3
-4:Beach Weather - Sex, Drugs, Etc..mp3
-5:Blackbear - IDFC.mp3
-6:Cigarettes After Sex - Apocalypse.mp3
-7:Daft Punk - Get Lucky.mp3
-8:Izzamuzzic - Shootout.mp3
-9:Joji - Slow Dancing In The Dark.mp3
-10:Kavinsky - Nightcall.mp3
-11:Keane - Somewhere Only We Know.mp3
-12:Kid Cudi - Mr. Rager.mp3
-13:M83 - Midnight City.mp3
-14:Mac DeMarco - Chamber of Reflection.mp3
-15:Mareux - The Perfect Girl.mp3
-16:Mr.Kitty - After Dark.mp3
-17:Phantogram - Black Out Days.mp3
-18:Rihanna - Diamonds.mp3
-19:Surf Curse - Freaks.mp3
-20:The Neighbourhood - Afraid.mp3
-21:The Neighbourhood - Daddy Issues.mp3
-22:The Neighbourhood - Reflections.mp3
-23:The neighbourhood - Softcore.mp3
-24:The Neighbourhood - Sweater Weather.mp3
-25:Tom Odell - Another Love.mp3
-26:Vance Joy - Riptide.mp3
+0:Arctic Monkeys - I Wanna Be Yours.mp3
+1:Artic Monkey - 505.mp3
+2:Beach House - Space Song.mp3
+3:Beach Weather - Sex, Drugs, Etc..mp3
+4:Blackbear - IDFC.mp3
+5:Cigarettes After Sex - Apocalypse.mp3
+6:Daft Punk - Get Lucky.mp3
+7:Izzamuzzic - Shootout.mp3
+8:Joji - Slow Dancing In The Dark.mp3
+9:Kavinsky - Nightcall.mp3
+10:Keane - Somewhere Only We Know.mp3
+11:Kid Cudi - Mr. Rager.mp3
+12:M83 - Midnight City.mp3
+13:Mac DeMarco - Chamber of Reflection.mp3
+14:Mareux - The Perfect Girl.mp3
+15:Mr.Kitty - After Dark.mp3
+16:Phantogram - Black Out Days.mp3
+17:Rihanna - Diamonds.mp3
+18:Surf Curse - Freaks.mp3
+19:The Neighbourhood - Afraid.mp3
+20:The Neighbourhood - Daddy Issues.mp3
+21:The Neighbourhood - Reflections.mp3
+22:The neighbourhood - Softcore.mp3
+23:The Neighbourhood - Sweater Weather.mp3
+24:Tom Odell - Another Love.mp3
+25:Vance Joy - Riptide.mp3
 playlist_end
