@@ -1,9 +1,9 @@
-sw_volume: 100
+sw_volume: 96
 audio_device_state:1:pulse audio
 audio_device_state:1:Visualizer feed
 state: play
-current: 21
-time: 69.015000
+current: 1
+time: 120.101000
 random: 1
 repeat: 1
 single: 0
@@ -34,8 +34,7 @@ playlist_begin
 19:The Neighbourhood - Afraid.mp3
 20:The Neighbourhood - Daddy Issues.mp3
 21:The Neighbourhood - Reflections.mp3
-22:The neighbourhood - Softcore.mp3
-23:The Neighbourhood - Sweater Weather.mp3
-24:Tom Odell - Another Love.mp3
-25:Vance Joy - Riptide.mp3
+22:The Neighbourhood - Sweater Weather.mp3
+23:Tom Odell - Another Love.mp3
+24:Vance Joy - Riptide.mp3
 playlist_end

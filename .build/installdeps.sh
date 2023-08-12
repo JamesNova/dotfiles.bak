@@ -24,5 +24,4 @@ sudo pacman -S --needed --noconfirm - < $pkgs
 paru -S --needed - < $aurpkgs
 sudo systemctl enable ly
 python -m ensurepip --upgrade
-python -m pip install --upgrade pip
-pip install --break-system-packages yt-dlp
+python -m pip install --break-system-packages --upgrade pip

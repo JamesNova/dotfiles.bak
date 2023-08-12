@@ -5,7 +5,7 @@ read -p "Are you using Arch Linux? (or a distro that uses pacman?) [y/N]" distro
 
 case $distro in
     y|Y|yes|Yes|YES)
-        folder=$(find $HOME -iname novapkgs.txt -printf '%h')
+        folder=$(find / -iname novapkgs.txt -printf '%h')
         sudo chown $USER $folder
         cd $folder
         ./installdeps.sh
@@ -43,6 +43,10 @@ if [[ -d "$HOME/.config" ]]; then
     mv .config .config.bak
 fi
 
+if [[ -f "$HOME/.mpd" ]]; then
+    mv .mpd .mpd.bak
+fi
+
 if [[ ! -d "$HOME/.local/bin" ]]; then
     mkdir -p $HOME/.local/bin
 fi
@@ -50,18 +54,19 @@ fi
 mv novadots/.xinitrc .xinitrc
 mv novadots/.bashrc .bashrc
 mv novadots/.mpd .mpd
+mv novadots/Music Music
 mv novadots/.config .config
 mv novadots/.local/bin/* .local/bin/
 mv novadots/.session .session
 touch $HOME/.theme
-echo "#!/bin/sh" > .theme
-echo "theme=nord" > .theme
+echo "theme=Nord" > $HOME/.theme
 
 case $backup in
     n|N|no|No|NO)
         rm -rf .xinitrc.bak
         rm -rf .bashrc.bak
         rm -rf .config.bak
+        rm -rf .mpd.bak
     ;;
     *)
     ;;
@@ -76,7 +81,8 @@ $HOME/.local/bin/rofithemer
 $HOME/.local/bin/polythemer
 
 echo "Cleaning things out..."
-rm -rf $folder
+repocp=$(dirname $(sudo find / -iname novapkgs.txt -printf '%h'))
+rm -rf $repocp
 rm -rf $HOME/novadots
 
 echo "Now you need to do the final step manually"
