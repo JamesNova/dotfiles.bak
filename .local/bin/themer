@@ -17,7 +17,7 @@ if [[ -f "~/.theme" ]]; then
 fi
 
 touch ~/.theme
-echo "#!/bin/sh" > ~/.theme
+echo "#! /bin/sh" > ~/.theme
 echo "theme=$choice" > ~/.theme
 
 alathemer

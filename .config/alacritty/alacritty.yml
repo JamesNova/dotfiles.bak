@@ -253,7 +253,7 @@ tokyo-night: &tokyo-night
   # *solarized-light
   # *solarized-dark
 
-colors: *dracula
+colors: *nord
 
 #######################################
 ##       END OF COLOR SCHEMES        ##
