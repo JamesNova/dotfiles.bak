@@ -23,5 +23,3 @@ sudo pacman -Syyu --noconfirm
 sudo pacman -S --needed --noconfirm - < $pkgs
 paru -S --needed - < $aurpkgs
 sudo systemctl enable ly
-python -m ensurepip --upgrade
-python -m pip install --break-system-packages --upgrade pip

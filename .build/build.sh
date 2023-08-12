@@ -30,7 +30,7 @@ git clone https://github.com/JamesNova/dotfiles $HOME/novadots
 
 echo "Building the novadots will change your personal configs"
 read -p "Do you want to make backup of your dotfiles? [Y/n]" backup
-echo "Are you in a Virtual Machine? [Y/n]" vmchoice
+read -p "Are you in a Virtual Machine? [Y/n]" vmchoice
 
 if [[ -f "$HOME/.xinitrc" ]]; then
     mv .xinitrc .xinitrc.bak
