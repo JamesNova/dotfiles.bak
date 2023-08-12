@@ -30,6 +30,7 @@ git clone https://github.com/JamesNova/dotfiles $HOME/novadots
 
 echo "Building the novadots will change your personal configs"
 read -p "Do you want to make backup of your dotfiles? [Y/n]" backup
+echo "Are you in a Virtual Machine? [Y/n]" vmchoice
 
 if [[ -f "$HOME/.xinitrc" ]]; then
     mv .xinitrc .xinitrc.bak
@@ -61,6 +62,15 @@ mv novadots/.session .session
 touch $HOME/.theme
 echo "theme=Nord" > $HOME/.theme
 
+case $vmchoice in
+    n|N|no|No|NO)
+        echo "..."
+    ;;
+    *)
+        rm -rf .config/picom
+    ;;
+esac
+
 case $backup in
     n|N|no|No|NO)
         rm -rf .xinitrc.bak
@@ -87,3 +97,5 @@ rm -rf $HOME/novadots
 echo "Now you need to do the final step manually"
 echo "Download and extract the next zip file as /usr/share/backgrounds"
 echo "https://drive.google.com/file/d/1xk_i1mXldCwbXCiOLeBVW3kM70PsekuK/view?usp=sharing"
+echo "After installing it, while in the desktop, press: supr + shift + t"
+echo "to set a wallpaper."
