@@ -24,7 +24,6 @@ unrar
 unzip
 base-devel
 xorg-xrandr
-ly
 
 alsa-utils
 alsa-plugins

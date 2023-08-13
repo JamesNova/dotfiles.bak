@@ -1,3 +1,5 @@
 ttf-meslo
 ttf-ms-fonts
 pfetch
+betterlockscreen
+xinit-xsession
