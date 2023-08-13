@@ -22,4 +22,3 @@ echo "Installing Packages"
 sudo pacman -Syyu --noconfirm
 sudo pacman -S --needed --noconfirm - < $pkgs
 paru -S --needed - < $aurpkgs
-sudo systemctl enable ly

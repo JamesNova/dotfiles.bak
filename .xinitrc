@@ -25,7 +25,7 @@ start_pipewire() {
 }
 
 start_pulseaudio() {
-    pulseaudio --check || pulseaudio --start
+    pulseaudio --start
 }
 
 start_dunst() {
@@ -62,7 +62,6 @@ case $SESSION in
     awesome)
         screen_resolution
         start_compositor
-        start_pulseaudio
         run_unclutter
         start_dunst
         start_wallpaper
@@ -81,5 +80,4 @@ case $SESSION in
     ;;
 esac
 
-export ZDOTDIR=$HOME/.config/zsh
 exec $SESSION
