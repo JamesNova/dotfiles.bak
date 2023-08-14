@@ -33,7 +33,7 @@ start_dunst() {
 }
 
 start_compositor() {
-    picom -b
+    picom --experimental-backends -b &
 }
 
 run_unclutter() {
